@@ -1,0 +1,164 @@
+.flex-row {
+  display:flex;
+  gap:3px;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(231, 228, 228);
+  overflow: auto;
+}
+
+.wrapper {
+  padding-left: 70px;
+  height: 100%;
+  background-image: url(./assets/bg.jpg);
+  box-shadow: 2px 10px 13px 9px rgba(0,0,0,0.75);
+  
+  overflow-x: hidden;
+}
+
+header {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+input, button {
+  font-size: 25px;
+  margin-right: 30px;
+}
+
+#create {
+    background-color: transparent;
+    padding:10px;
+    font-size:20px;
+    border:2px solid black;
+    color:white;
+}
+
+#create:active {
+    transform: scale(0.95);
+}
+
+h1 {
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+}
+
+#users-section {
+
+  margin-top: 80px;
+  display: flex;
+  width: 720px;
+  margin-left:220px;
+  flex-wrap: wrap;
+}
+
+.user-card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 20px;
+  font-size: 20px;
+  box-shadow: 10px -9px 23px 1px rgba(0, 0, 0, 0.75);
+  width: 200px;
+  background-color: rgb(96, 95, 95);
+  overflow: hidden;
+  opacity:0.7;
+}
+
+.user-card:hover {
+  transform: scale(1.1);
+  opacity:1;
+}
+.user-name {
+  width:100%;
+  height:40px;
+  margin-top:0;
+  background-color:rgb(167, 138, 104);
+  padding-top:15px;
+  text-align: center;
+  border-bottom:2px solid grey;
+}
+
+.age {
+  margin-top:-5px;
+  font-size:30px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.delete-user-button {
+  width: 110%;
+  margin-top: 15px;
+  margin-left: 30px;
+  padding: 10px 0;
+  border: none;
+  background-color: rgb(42, 75, 165);
+  
+}
+
+.edit-user-button {
+  width: 110%;
+  margin-left: 30px;
+  padding: 10px 0;
+  border: none;
+  background-color: rgb(28, 56, 131);
+  
+}
+
+.edit-user-button:hover {
+  background-color: rgb(19, 43, 111);
+}
+.delete-user-button:hover {
+  background-color: rgb(19, 43, 111);
+}
+
+.edit-user-button:active, .delete-user-button:active {
+    transform: scale(0.9);
+}
+
+label {
+  color:white;
+  font-size:18px;
+}
+label:hover {
+  cursor: pointer;
+}
+
+#sort-by-age {
+  margin-left:20px;
+}
+
+.check {
+  display:flex;
+  border: 2px solid white;
+  width:318px;
+  align-items: center;
+  justify-content: center;
+}
+
+#pagination {
+  width:1150px;
+  display:flex;
+  justify-content: center;
+  margin-top:200px;
+  margin-bottom:50px;
+  
+}
+
